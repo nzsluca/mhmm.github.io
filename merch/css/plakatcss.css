@@ -1,0 +1,336 @@
+/*!
+ * Start Bootstrap - Shop Homepage (https://startbootstrap.com/template-overviews/shop-homepage)
+ * Copyright 2013-2019 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-shop-homepage/blob/master/LICENSE)
+ */
+@font-face {
+  font-family: "Library 3 AM";
+  src: url("../css/Betuk/libary/library-3-am-webfont.eot");
+  src: url("../css/Betuk/libary/library-3-am-webfont.eot?#iefix") format("embedded-opentype"), url("../css/Betuk/libary/library-3-am-webfont.woff") format("woff"), url("../css/Betuk/libary/Library-3-am.otf") format("truetype"), url("../css/Betuk/libary/library-3-am-webfont.svg") format("svg");
+}
+
+@font-face {
+  font-family: "Chappa";
+  src: url("../css/Betuk/chappa/chappa-blackoblique-webfont.eot");
+  src: url("../css/Betuk/chappa/chappa-BlackOblique.ttf") format("embedded-opentype"), url("../css/Betuk/chappa/chappa-blackoblique-webfont.woff") format("woff"), url("../css/Betuk/chappa/chappa-BlackOblique.ttf") format("truetype"), url("../css/Betuk/chappa/chappa-blackoblique-webfont.svg") format("svg");
+}
+
+body {
+  padding-top: 56px;
+  background-color: #1B2133;
+}
+
+.navbar {
+  background-color: #e6b028 !important;
+  font-family: "Library 3 AM";
+  height: 9vh;
+  font-weight: bold;
+}
+
+.navbar-light .navbar-toggler-icon {
+  background-image: url(../../felso.svg) !important;
+}
+
+.navbar-collapse {
+  margin-left: 151vh;
+}
+
+.navbar-brand {
+  margin-right: 10vh !important;
+}
+
+/*MOBIL */
+@media screen and (min-width: 413px) and (max-width: 768px) {
+  .navbar {
+    height: 10vh;
+  }
+  .navbar-brand {
+    margin-bottom: 9vh;
+  }
+  .navbar-toggler {
+    margin-bottom: 9vh;
+  }
+  #navbarResponsive {
+    background-color: rgba(230, 176, 40, 0.849) !important;
+    margin-top: -10.5vh;
+    padding: 10px;
+    -webkit-transition: 0.3s ease-in;
+    transition: 0.3s ease-in;
+    -webkit-transform-origin: top;
+            transform-origin: top;
+  }
+  .navbar-collapse {
+    margin-left: 0;
+  }
+}
+
+@media screen and (min-width: 359px) and (max-width: 413px) {
+  .navbar {
+    height: 10vh;
+  }
+  .navbar-brand {
+    margin-bottom: 9vh;
+  }
+  .navbar-toggler {
+    margin-bottom: 9vh;
+  }
+  #navbarResponsive {
+    background-color: rgba(230, 176, 40, 0.849) !important;
+    margin-top: -10.5vh;
+    padding: 10px;
+    -webkit-transition: 0.3s ease-in;
+    transition: 0.3s ease-in;
+    -webkit-transform-origin: top;
+            transform-origin: top;
+  }
+  .navbar-collapse {
+    margin-left: 0;
+  }
+}
+
+/*Tablet*/
+@media screen and (min-width: 768px) and (max-width: 810px) {
+  #navbarResponsive {
+    margin-top: 0;
+  }
+  .navbar-collapse {
+    margin-left: 0;
+  }
+  .navbar-brand {
+    margin-bottom: 9vh;
+  }
+  .navbar-toggler {
+    margin-bottom: 9vh;
+  }
+  #navbarResponsive {
+    background-color: rgba(230, 176, 40, 0.849) !important;
+    padding: 10px;
+    -webkit-transition: 0.3s ease-in;
+    transition: 0.3s ease-in;
+    -webkit-transform-origin: top;
+            transform-origin: top;
+    margin-top: -9vh;
+  }
+}
+
+/*Laptop*/
+@media screen and (min-width: 810px) and (max-width: 1440px) {
+  .navbar-collapse {
+    margin-left: 105vh;
+  }
+}
+
+/*Nagy kijelzo*/
+@media screen and (min-width: 1440px) and (max-width: 1906px) {
+  .navbar-collapse {
+    margin-left: 125vh;
+  }
+}
+
+.nav-item a:hover {
+  color: #93213e;
+  letter-spacing: .1em;
+  text-shadow: -5px 5px 0px #18701f, -10px 10px 0px #e761c6;
+}
+
+.navbar-brand {
+  margin-right: 30px !important;
+}
+
+.felso {
+  margin: 3vh;
+}
+
+.felx-1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+  margin: 3vh auto;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.plaki-sor {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  height: 100%;
+  width: 13.33333%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 3vh;
+  cursor: pointer;
+  position: relative;
+  /*MOBIL */
+  /*MOBIL */
+  /*Tablet*/
+  /*Laptop*/
+  /*Nagy kijelzo*/
+  /*MOBIL */
+  /*Tablet*/
+}
+
+.plaki-sor img {
+  height: 350px;
+  width: 250px;
+  margin-left: 5vh;
+}
+
+.plaki-sor .content-image {
+  margin-left: 5vh;
+}
+
+@media screen and (min-width: 413px) and (max-width: 767px) {
+  .plaki-sor .container {
+    display: block;
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .plaki-sor .container {
+    width: 33.33333%;
+  }
+}
+
+.plaki-sor .container .title {
+  color: #1a1a1a;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.plaki-sor .content {
+  width: 50%;
+  min-width: 400px;
+  overflow: hidden;
+}
+
+.plaki-sor .content .content-overlay {
+  background: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  height: 99%;
+  width: 83.5%;
+  left: 5.3vh;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 0;
+  -webkit-transition: all 0.4s ease-in-out 0s;
+  transition: all 0.4s ease-in-out 0s;
+}
+
+@media screen and (min-width: 413px) and (max-width: 767px) {
+  .plaki-sor .content .content-overlay {
+    width: 68%;
+    left: 18.5vw;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 810px) {
+  .plaki-sor .content .content-overlay {
+    width: 78.5%;
+    left: 7.8vw;
+  }
+}
+
+@media screen and (min-width: 810px) and (max-width: 1440px) {
+  .plaki-sor .content .content-overlay {
+    width: 94%;
+    left: 2.2vw;
+  }
+}
+
+@media screen and (min-width: 1440px) and (max-width: 1906px) {
+  .plaki-sor .content-overlay {
+    width: 58%;
+    left: 8.0vw;
+  }
+}
+
+.plaki-sor .content:hover .content-overlay {
+  opacity: 1;
+}
+
+.plaki-sor .content-details {
+  position: absolute;
+  text-align: center;
+  padding-left: 1em;
+  padding-right: 1em;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  opacity: 0;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.plaki-sor .content:hover .content-details {
+  top: 50%;
+  left: 50%;
+  opacity: 1;
+}
+
+.plaki-sor .content-details h3 {
+  color: #fff;
+  font-weight: 500;
+  letter-spacing: 0.15em;
+  margin-bottom: 0.5em;
+  margin-left: 4vh;
+  text-transform: uppercase;
+}
+
+@media screen and (min-width: 413px) and (max-width: 767px) {
+  .plaki-sor .content:hover .content-details {
+    left: 50%;
+  }
+}
+
+@media screen and (min-width: 413px) and (max-width: 767px) {
+  .plaki-sor {
+    font-size: 13px;
+    margin-left: 2vh;
+  }
+}
+
+.plaki-sor .content-details p {
+  color: #fff;
+  font-size: 0.8em;
+}
+
+.plaki-sor .fadeIn-bottom {
+  top: 80%;
+}
+
+/*MOBIL */
+@media screen and (min-width: 413px) and (max-width: 767px) {
+  .plaki-sor {
+    width: 63.33%;
+  }
+}
+
+@media screen and (min-width: 359px) and (max-width: 413px) {
+  .plaki-sor {
+    width: 63.33%;
+  }
+}
+
+/*Tablet*/
+@media screen and (min-width: 768px) and (max-width: 810px) {
+  .plaki-sor {
+    width: 33.33%;
+  }
+}
+
+.py-5 {
+  background-color: #1B2133 !important;
+}
+/*# sourceMappingURL=plakatcss.css.map */

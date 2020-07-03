@@ -1,0 +1,645 @@
+        $base-color: rgba(23, 18, 79, 1);
+        // Font variable
+        $title-fontsize: 7vh;
+        $p-size: 16px;
+        @mixin eventneve ($left, $top, $color, $font) {
+            position: absolute;
+            left: $left;
+            top: $top;
+            color: $color;
+            font-family: $font;
+            letter-spacing: 5px;
+        }
+        
+        @mixin p-box($left, $top) {
+            width: 41vw;
+            height: 25vh;
+            margin-top: $top;
+            margin-left: $left;
+            padding: 10px;
+            text-align: left;
+        }
+        
+        @font-face {
+            font-family: "Library 3 AM";
+            src: url("../css/Betuk/libary/library-3-am-webfont.eot");
+            src: url("../css/Betuk/libary/library-3-am-webfont.eot?#iefix") format("embedded-opentype"), url("../css/Betuk/libary/library-3-am-webfont.woff") format("woff"), url("../css/Betuk/libary/Library-3-am.otf")format("truetype"), url("../css/Betuk/libary/library-3-am-webfont.svg") format("svg");
+        }
+        
+        @font-face {
+            font-family: "Chappa";
+            src: url("../css/Betuk/chappa/chappa-blackoblique-webfont.eot");
+            src: url("../css/Betuk/chappa/chappa-BlackOblique.ttf") format("embedded-opentype"), url("../css/Betuk/chappa/chappa-blackoblique-webfont.woff") format("woff"), url("../css/Betuk/chappa/chappa-BlackOblique.ttf")format("truetype"), url("../css/Betuk/chappa/chappa-blackoblique-webfont.svg") format("svg");
+        }
+        
+        body {
+            background-color: #1B2133 !important;
+            overflow-x: hidden
+        }
+        
+        
+       
+        //főcímek
+        #focim-video {
+            display: block;
+            height: 13vh;
+            margin-top: 11vh;
+            margin-bottom: 5vh;
+            text-align: center;
+        }
+        
+        #focim {
+            display: block;
+            height: 13vh;
+            margin-top: 11vh;
+            margin-bottom: 5vh;
+            text-align: center;
+        }
+        
+        .title {
+            font-size: 15vh;
+            color: white;
+            font-family: "Chappa";
+            margin-bottom: 3vh;
+            animation-duration: 1s;
+            animation-delay: 0.1s;
+        }
+/*MOBIL */
+ @media screen and (min-width: 359px) and (max-width: 413px){
+    #focim{
+    height: 9vh;
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+
+ }
+ .title {
+     font-size: 9vh;
+ }
+
+    }
+
+/*MOBIL */
+  @media screen and (min-width: 413px) and (max-width: 768px){
+    #focim{
+        height: 9vh;
+        margin-top: 3vh;
+        margin-bottom: 3vh;
+    
+     }
+     .title {
+         font-size: 9vh;
+     }
+   
+    }
+/*Tablet*/
+    @media screen and (min-width: 768px) and (max-width: 810px){
+    #focim{
+        height: 11vh;
+        margin-top: 3vh;
+    margin-bottom: 3vh;
+
+     }
+     .title {
+         font-size: 11vh;
+     }
+   
+    }
+       
+
+       
+        /*eventek oldal */
+        
+        .cont {
+            margin-top: 5vh;
+            margin-bottom: 2vh;
+            display: block;
+        }
+             /*MOBIL */
+    @media screen and (min-width: 359px) and (max-width: 413px){
+        .cont {
+           height: 334vh;
+           margin-top: 5vh;
+            margin-bottom: 5vh;
+        }
+    }
+       
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            grid-row-gap: 30px;
+            height: 150vh;
+            width: 98vw;
+            padding-top: 5vh;
+            margin-top: 4vh;
+            margin-bottom: 4vh;
+
+            .relative {
+                position: relative;
+                margin: 0;
+                padding: 0;
+                
+            }
+         
+
+
+            //JOBB PARAGARFUS
+            .pj {
+                @include p-box(7vw,
+                13.4vw);
+            }
+            p {
+                font-size: $p-size;
+                color: rgb(247, 234, 220);
+                font-family: 'Lora', serif;
+            }
+            // bal paragrafus
+            .pb {
+                @include p-box(8vw,
+                19.4vw);
+                margin-bottom: 9vw;
+            }
+            p {
+                font-size: $p-size;
+                color: rgb(247, 234, 220);
+                font-family: 'Lora', serif;
+            }
+            // span jobb oldalt
+            .e {
+                @include eventneve(0.1vh,
+                4vh,
+                #f789db,
+                "Chappa");
+                font-size: 4vh;
+                position: relative;
+            }
+            .m {
+                @include eventneve(0.1vh,
+                8vh,
+                #ed7d3a,
+                "Chappa");
+                font-size: 11vh;
+                letter-spacing: 8px;
+                -webkit-text-stroke: 1px #e75d53;
+                color:#1B2133;
+                text-shadow: 5px 5px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+            }
+            .h {
+                @include eventneve(12vh,
+                2.1vh,
+                #88c1db,
+                "Chappa");
+                font-size: 7vh;
+            }
+
+
+
+//MEDIA QUERY
+          /*MOBIL */
+ @media screen and (min-width: 359px) and (max-width: 413px){  
+               
+            .pj {
+                @include p-box(5vw,6vh );
+                width: 90vw;
+                justify-self: center;
+            }
+            .pb {
+                @include p-box(5vh, 10vh );
+                width: 90vw;
+                margin-bottom: 30vh;
+                
+            }
+            p {
+                font-size: larger;
+            }
+            .e { 
+                font-family:  "Chappa";
+                font-size: 3vh;
+                position: relative;
+            }
+            .m { 
+                font-family: "Chappa";
+                font-size: 8vh;
+                position: relative;
+            }
+            .h {
+                color:#88c1db;
+              font-family: "Chappa";
+                font-size: 5vh;
+                position: relative;
+            }
+         
+        }
+        /*MOBIL */
+  @media screen and (min-width: 413px) and (max-width: 768px){
+    .pj {
+        @include p-box(5vw,6vh );
+        width: 90vw;
+        justify-self: center;
+    }
+    .pb {
+        @include p-box(5vh, 10vh );
+        width: 90vw;
+        margin-bottom: 30vh;
+        
+    }
+    p {
+        font-size: larger;
+    }
+    .e { 
+        font-family:  "Chappa";
+        font-size: 3vh;
+        position: relative;
+    }
+    .m { 
+        font-family: "Chappa";
+        font-size: 8vh;
+        position: relative;
+    }
+    .h {
+        color:#88c1db;
+      font-family: "Chappa";
+        font-size: 5vh;
+        position: relative;
+    }
+ 
+}
+/*Nagy kijelzo*/
+@media screen and (min-width: 1440px) and (max-width: 1906px){
+    .pj {
+        @include p-box(8vw,
+        11vw);
+    }
+    p {
+        font-size: 18px;
+        color: rgb(247, 234, 220);
+        font-family: 'Lora', serif;
+    }
+    // bal paragrafus
+    .pb {
+        @include p-box(8vw,
+        17vw);
+        margin-bottom: 10vw;
+    }
+    p {
+        font-size: 18px;
+        color: rgb(247, 234, 220);
+        font-family: 'Lora', serif;
+    }
+    // span jobb oldalt
+    .e {
+        @include eventneve(0.1vh,
+        4vh,
+        #f789db,
+        "Chappa");
+        font-size: 5vh;
+        position: relative;
+    }
+    .m {
+        @include eventneve(0.1vh,
+        8vh,
+        #ed7d3a,
+        "Chappa");
+        font-size: 12vh;
+        letter-spacing: 8px;
+        -webkit-text-stroke: 1px #e75d53;
+        color:#1B2133;
+        text-shadow: 5px 5px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    }
+    .h {
+        @include eventneve(12vh,
+        2.1vh,
+        #88c1db,
+        "Chappa");
+        font-size: 7vh;
+    }
+}
+
+         // END MEDIA QUERY    
+
+            //gomb jobb oldal
+            .gomb {
+                color: rgb(246, 236, 248) ;
+                display: inline-block;
+                font-size: 13px;
+                letter-spacing: 4px;
+                font-family: 'Lora', serif;
+                margin: 10px 2px  1px 88px;
+                padding: 24px 30px;
+                position: relative;
+                overflow: hidden;
+                text-decoration: none;
+                text-transform: uppercase;
+                transition: 0.5s;
+                -moz-transition: 0.5s; 
+                -webkit-transition: 0.5s; 
+                -o-transition:0.5s;
+                -webkit-transform: translate3d(0,0,0);
+                -webkit-backface-visibility:hidden;
+                -webkit-box-reflect: below 1px linear-gradient(transparent, #0005);
+            }
+            .gomb:nth-child(1) {
+                filter: hue-rotate(290deg);
+            }
+            .gomb:nth-child(3) {
+                filter: hue-rotate(110deg);
+            }
+            .gomb:hover {
+                background-color:rgb(46, 228, 241) ;
+                box-shadow: 0 0 5px rgb(3, 79, 244), 0 0 25px rgb(3, 156, 244), 0 0 40px rgb(3, 156, 244), 0 0 100px rgb(3, 128, 244);
+                box-shadow: 0 0 5pxrgb(19, 208, 221), 0 0 25pxrgb(36, 220, 226), 0 0 50px rgb(46, 228, 241), 0 0 200px rgb(34, 207, 219);
+                color:rgb(0, 0, 0);
+                -webkit-transform: translate3d(0,0,0);
+                -webkit-backface-visibility:hidden;
+                text-decoration: none;
+                font-weight: bold;
+            }
+            .gomb span {
+                display: block;
+                position: absolute;
+            }
+            .gomb span:nth-child(1) {
+                animation: animate1 1s linear ;
+                background: linear-gradient(90deg, transparent, rgb(38, 233, 233));
+                height: 2px;
+                left: -100%;
+                top: 0;
+                width: 100%;
+            }
+            @keyframes animate1 {
+                0% {
+                    left: -100%;
+                }
+                50%,
+                100% {
+                    left: 70%;
+                }
+            }
+            .gomb span:nth-child(2) {
+                animation: animate2 1s linear infinite;
+                animation-delay: 0.25s;
+                background: linear-gradient(180deg, transparent, rgb(25, 216, 230));
+                height: 100%;
+                top: -100%;
+                right: 0;
+                width: 2px;
+            }
+            @keyframes animate2 {
+                0% {
+                    top: -100%;
+                }
+                50%,
+                100% {
+                    top: 100%;
+                }
+            }
+            .gomb span:nth-child(3) {
+                animation: animate3 1s linear infinite;
+                animation-delay: 0.5s;
+                background: linear-gradient(270deg, transparent, rgb(19, 236, 226));
+                bottom: 0;
+                height: 2px;
+                right: -100%;
+                width: 100%;
+            }
+            @keyframes animate3 {
+                0% {
+                    right: -100%;
+                }
+                50%,
+                100% {
+                    right: 100%;
+                }
+            }
+            .gomb span:nth-child(4) {
+                animation: animate4 1s linear infinite;
+                animation-delay: 0.75s;
+                background: linear-gradient(360deg, transparent, rgb(39, 214, 205));
+                bottom: -100%;
+                height: 100%;
+                left: 0;
+                width: 2px;
+            }
+            @keyframes animate4 {
+                0% {
+                    bottom: -100%;
+                }
+                
+                100% {
+                    bottom: 100%;
+                }
+            }
+
+
+            // bal oldal
+            .eb {
+                @include eventneve(65vh,
+                4.8vh,
+                #36aa31,
+                "Chappa");
+                font-size: 4vh;
+            }
+            .mb {
+                @include eventneve(59.4vh,
+                10vh,
+                #ed7d3a,
+                "Chappa");
+                font-size: 11vh;
+                letter-spacing: 8px;
+                -webkit-text-stroke: 1px #0a0350;
+                color: rgb(216, 39, 39);
+                text-shadow: 5px 5px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+            }
+            .hb {
+                @include eventneve(49vh,
+                3vh,
+                #67597a,
+                "Chappa");
+                font-size: 7vh;
+            }
+            .event {
+                display: block;
+                padding: 3vh;
+               img{
+                   visibility: visible;
+                    width: 100%;
+                    height: 70%;
+                    margin-bottom: 5vh;
+                }
+                
+            }
+
+//MEDIA QUERY
+@media screen and (min-width: 413px) and (max-width: 768px){
+
+    .ketto{
+        margin-top: 4vh;
+    }
+    .gomb {
+        margin: 5px 10px;
+        padding: 14px 23px;
+        justify-self: center;
+    }
+    
+    .eb {
+        left: 2vh;
+       font-family:"Chappa" ;
+        font-size: 3vh;
+        position: relative;
+    }
+    .mb {
+        left: 0;
+        top: 12vh;
+        position: relative;
+      font-family: "Chappa";
+        font-size: 8vh;
+       
+    }
+    .hb {
+        left: 0;
+        top: 5vh;
+       position: relative;
+        font-family: "Chappa";
+        font-size: 5vh;
+    }
+
+    
+   
+}
+
+  /*MOBIL */
+  @media screen and (min-width: 359px) and (max-width: 413px){
+    .ketto{
+        margin-top: 4vh;
+    }
+    .gomb {
+        margin: 5px 10px;
+        padding: 14px 23px;
+        justify-self: center;
+    }
+    
+    .eb {
+        left: 2vh;
+       font-family:"Chappa" ;
+        font-size: 3vh;
+        position: relative;
+    }
+    .mb {
+        left: 0;
+        top: 12vh;
+        position: relative;
+      font-family: "Chappa";
+        font-size: 8vh;
+       
+    }
+    .hb {
+        left: 0;
+        top: 5vh;
+       position: relative;
+        font-family: "Chappa";
+        font-size: 5vh;
+    }
+
+    img .lapi{
+        height: 1vh;
+     }
+     .mobile img{
+        visibility: visible;
+         width: 100%;
+         height: 80%;
+     }
+   
+}
+/*Nagy kijelzo*/
+@media screen and (min-width: 1440px) and (max-width: 1906px){
+    .eb {
+        @include eventneve(62vh,
+        4.8vh,
+        #36aa31,
+        "Chappa");
+        font-size: 5vh;
+    }
+    .mb {
+        @include eventneve(57vh,
+        10vh,
+        #ed7d3a,
+        "Chappa");
+        font-size: 12vh;
+        letter-spacing: 8px;
+        -webkit-text-stroke: 1px #0a0350;
+        color: rgb(216, 39, 39);
+        text-shadow: 5px 5px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    }
+    .hb {
+        @include eventneve(45vh,
+        3vh,
+        #67597a,
+        "Chappa");
+        font-size: 7vh;
+    }
+    .event {
+        display: block;
+        padding: 3vh;
+       img{
+           visibility: visible;
+            width: 100%;
+            height: 50%;
+        }
+        .mobile{
+            visibility: hidden;
+            width: 0;
+            height: 0;
+        }
+    }
+}
+
+        
+        @-webkit-keyframes anim1 {
+            from {
+                -webkit-transform: translateY(-100px);
+                transform: translateY(-100px);
+                opacity: 0;
+            }
+            to {
+                -webkit-transform: translateY(0);
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+        
+        @keyframes anim1 {
+            from {
+                -webkit-transform: translateY(-100px);
+                transform: translateY(-100px);
+                opacity: 0;
+            }
+            to {
+                -webkit-transform: translateY(0);
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+    }
+    //MEDIA QUERY
+     /*MOBIL */
+    @media screen and (min-width: 359px) and (max-width: 413px){
+    .grid{
+        grid-template-columns: 50vh;
+        grid-template-rows: 70vh;
+        margin-bottom: 2vh;
+        height: 350vh;
+       
+}
+}
+@media screen and (min-width: 413px) and (max-width: 768px){
+    .grid{
+        grid-template-columns: 50vh;
+        grid-template-rows: 70vh;
+        height: 340vh;
+        margin-bottom: 2vh;
+}
+    
+}
+
+//MEDIA QUERY VÉGE
+        

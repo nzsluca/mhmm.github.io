@@ -1,0 +1,254 @@
+/*!
+ * Start Bootstrap - Shop Homepage (https://startbootstrap.com/template-overviews/shop-homepage)
+ * Copyright 2013-2019 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-shop-homepage/blob/master/LICENSE)
+ */
+
+
+ @font-face {
+  font-family: "Library 3 AM";
+  src: url("../css/Betuk/libary/library-3-am-webfont.eot");
+  src: url("../css/Betuk/libary/library-3-am-webfont.eot?#iefix") format("embedded-opentype"), url("../css/Betuk/libary/library-3-am-webfont.woff") format("woff"), url("../css/Betuk/libary/Library-3-am.otf") format("truetype"), url("../css/Betuk/libary/library-3-am-webfont.svg") format("svg");
+}
+@font-face {
+  font-family: "Chappa";
+  src: url("../css/Betuk/chappa/chappa-blackoblique-webfont.eot");
+  src: url("../css/Betuk/chappa/chappa-BlackOblique.ttf") format("embedded-opentype"), url("../css/Betuk/chappa/chappa-blackoblique-webfont.woff") format("woff"), url("../css/Betuk/chappa/chappa-BlackOblique.ttf")format("truetype"), url("../css/Betuk/chappa/chappa-blackoblique-webfont.svg") format("svg");
+}
+
+
+body {
+  padding-top: 56px;
+  background-color:#1B2133;
+}
+
+.navbar{
+  background-color:rgba(230, 176, 40)!important;
+  font-family: "Library 3 AM";
+  height: 9vh;
+  font-weight: bold;
+ 
+}
+.navbar-collapse{
+  margin-left: 115vh;
+}
+
+.navbar-light .navbar-toggler-icon{
+  background-image: url(../../felso.svg)!important;
+}
+
+.navbar-brand{
+  margin-right: 10vh!important;
+}
+/*MOBIL */
+@media screen and (min-width: 413px) and (max-width: 768px){
+  .navbar{
+    height: 10vh;
+  }
+  .navbar-brand{
+    margin-bottom: 9vh;
+  }
+  .navbar-toggler{
+    margin-bottom: 9vh; 
+  }
+  #navbarNavDropdown{
+    background-color: rgba(230, 176, 40, 0.849)!important ;
+    margin-top: -8.5vh;
+    transition: 0.3s ease-in;
+    padding: 10px;
+  }
+  .navbar-collapse{
+    margin-left: 0;
+  }
+ }
+
+ @media screen and (min-width: 359px) and (max-width: 413px){
+  .navbar{
+    height: 10vh;
+  }
+  .navbar-brand{
+    margin-bottom: 9vh;
+  }
+  .navbar-toggler{
+    margin-bottom: 9vh; 
+  }
+  #navbarNavDropdown{
+    background-color: rgba(230, 176, 40, 0.849)!important ;
+    margin-top: -8.5vh;
+    transition: 0.3s ease-in;
+    padding: 10px;
+  }
+  .navbar-collapse{
+    margin-left: 0;
+  }
+ }
+/*Tablet*/
+@media screen and (min-width: 768px) and (max-width: 810px){
+
+  #navbarNavDropdown{
+    margin-top: 0;
+  }
+  .navbar-collapse{
+    margin-left: 0vh;
+  }
+  #navbarNavDropdown{
+    background-color: rgba(230, 176, 40, 0.849)!important ;
+    margin-top: -8.5vh;
+    transition: 0.3s ease-in;
+    padding: 10px;
+  }
+ }
+
+    /*Laptop*/
+@media screen and (min-width: 810px) and (max-width: 1440px){
+  .navbar-collapse{
+    margin-left: 105vh;
+  }
+
+  }
+  /*Nagy kijelzo*/
+@media screen and (min-width: 1440px) and (max-width: 1906px){
+  .navbar-collapse{
+    margin-left: 125vh;
+  }
+  }
+
+.nav-item a:hover{
+  color: #93213e;
+  letter-spacing: .1em;
+ text-shadow: -5px 5px 0px #18701f, -10px 10px 0px #e761c6;   
+ }
+
+ .felso{
+   margin: 3vh;
+ }
+ /*MOBIL */
+ @media screen and (min-width: 413px) and (max-width: 768px){
+.felso{
+  margin: 0;
+  height: 78px;
+}
+
+ }
+
+.row{
+  width: 84vw!important;
+}
+.row{
+  margin-top: 10vh;
+  grid-gap: 8rem;
+}
+
+.card-body{
+  height: 250px!important;
+  width: 250px!important;
+
+}
+/*Tablet*/
+@media screen and (min-width: 768px)and (max-width: 810px){
+  .row{
+    margin-top: 5vh;
+    width: 100%!important;
+
+  }
+  .card-body{
+    height: 250px!important;
+    width: 250px!important;
+  
+  }
+
+}
+    /*Laptop*/
+    @media screen and (min-width: 810px) and (max-width: 1440px){
+      .row{
+       margin: 5vh auto;
+        width: 100%!important;
+        grid-gap: 4rem;
+      }
+
+
+    }  
+    
+     /*Nagy kijelzo*/
+@media screen and (min-width: 1440px) and (max-width: 1906px){
+
+  .row{
+    margin: 5vh auto;
+    
+ 
+   }
+
+
+ } 
+/*#ECF8F8*/
+.card{
+  width:350px!important;
+  background-color:#1B2133;
+  color: #ECF8F8!important;
+  padding: 12px;
+  border:  rgba(230, 176, 40) double  8px;
+  font-family: 'Lora', serif;
+-webkit-box-shadow: -20px 24px 5px -8px rgb(197, 88, 240);
+-moz-box-shadow: -20px 24px 5px -8px rgb(216, 108, 243);
+box-shadow: -20px 24px 5px -8px rgb(116, 175, 241);
+}
+
+.card-img-top{
+  height: 390px!important;
+  width:340px!important;
+  margin-left: 13px;
+  margin-top: 10px;
+  }
+
+/*MOBIL */
+@media screen and (min-width: 413px) and (max-width: 768px) {
+.card{
+  margin-left: 33px;
+}
+}
+/*Tablet*/
+@media screen and (min-width: 768px) and (max-width: 1280px) {
+.card{
+  width:300px!important;
+}
+.card-img-top{
+  width: 250px!important ;
+  height: 290px!important;
+}
+}
+ /*Nagy kijelzo*/
+ @media screen and (min-width: 1440px) and (max-width: 1906px){
+
+  .card{
+    margin-left: 12px;
+  }
+}
+.card-title{
+  font-family: "Library 3 AM";
+  color:  #ECF8F8;
+  font-weight: bold;
+  text-shadow: 5px -5px 0px #3b3b41  ;
+  
+}
+
+    /*Laptop*/
+    @media screen and (min-width: 810px) and (max-width: 1440px){
+    .container{
+      margin: auto;
+    }
+   }
+   /*Nagy kijelzo*/
+@media screen and (min-width: 1440px) and (max-width: 1906px){
+  .container{
+  
+    margin: auto;
+  }
+  .col-lg-15 .row{
+    margin-left: -23vh!important;
+  }
+ }
+
+
+.py-5{
+  background-color:#1B2133!important;
+}
